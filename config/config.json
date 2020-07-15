@@ -1,0 +1,17 @@
+{
+  "development": {
+    "url": "postgres://rlftntnl:HsZC7fgrTt0XVlOD84-NvWUGS9svGm8b@balarama.db.elephantsql.com:5432/rlftntnl",
+    "dialect": "postgres",
+    "operatorsAliases": "0"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "postgres://ryrvfdykcijscd:3e0be9136c4950a8b8bb2370a72a9807fd19d6fae058e92ef14b755c3d256a73@ec2-54-246-115-40.eu-west-1.compute.amazonaws.com:5432/d4opedpnuut990"
+  }
+}
