@@ -8,6 +8,10 @@ const User = require("./models").user;
 const TodoList = require("./models").todoList;
 
 app.use(express.json());
+app.get("/users", async (req, res, next) => {
+  const users = await User.findAll();
+  res.json(users);
+});
 
 app.get("/users/:userId", async (req, res) => {
   const userId = parseInt(req.params.userId);
